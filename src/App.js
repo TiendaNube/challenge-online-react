@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Switch, Route, Link } from "react-router-dom";
+
+import "./App.css";
+
+const A = () => <div>Componente 1</div>;
+const B = () => <div>Componente 2</div>;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <aside>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Product List</Link>
+            </li>
+            <li>
+              <Link to="/products">Products</Link>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <Switch>
+          <Route exact path="/" component={A} />
+          <Route path="/products" component={B} />
+        </Switch>
+      </main>
     </div>
   );
 }
 
-export default App;
+export default React.memo(App);
