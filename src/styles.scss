@@ -1,0 +1,5 @@
+* { padding: 0; margin: 0; box-sizing: border-box; }
+
+input {
+  &[type="text"] { border: 0; border-bottom: 1px solid; padding: 5px 10px; max-width: 200px; min-width: 100px; width: 100%; }
+}
