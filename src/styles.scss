@@ -1,2 +1,26 @@
 * { padding: 0; margin: 0; box-sizing: border-box; }
 
+ul { list-style: none; }
+a { text-decoration: none; color: inherit; }
+
+
+.app {
+  &.layout { 
+    display: flex; flex-flow: row nowrap; height: 100vh;
+    aside { 
+      background: white; background-color: #efefef; flex: 1 1 auto; max-width: 150px;
+      max-width: 180px; min-width: 120px;
+      header { padding: 20px 10px; margin-bottom: 30px; }
+      nav { 
+        ul li {
+          a { padding: 10px; display: block; }
+        }
+      }
+    }
+    main { 
+      flex: 1 1 auto; padding: 0 30px;
+      .page-title h1 { padding: 60px 0 30px 0; }
+    }
+    .centered { max-width: 600px; }
+  }
+}
