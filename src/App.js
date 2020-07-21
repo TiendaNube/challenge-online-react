@@ -1,17 +1,15 @@
 import React from 'react';
 import './styles.scss';
 import { Switch, Route, Link } from "react-router-dom";
-//import ProductForm from './components/ProductForm';
-
-import "./App.css";
+import ProductForm from './components/ProductForm';
 
 const A = () => <div>Componente 1</div>;
-const B = () => <div>Componente 2</div>;
 
 function App() {
   return (
-    <div className="App">
+    <div className="app layout">
       <aside>
+        <header>Tiendanube</header>
         <nav>
           <ul>
             <li>
@@ -24,9 +22,12 @@ function App() {
         </nav>
       </aside>
       <main>
+        <header className="page-title">
+          <h1>Products</h1>
+        </header>
         <Switch>
           <Route exact path="/" component={A} />
-          <Route path="/products" component={B} />
+          <Route path="/products" component={ProductForm} />
         </Switch>
       </main>
     </div>
