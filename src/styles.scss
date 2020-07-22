@@ -1,7 +1,9 @@
-* { padding: 0; margin: 0; box-sizing: border-box; }
+* { padding: 0; margin: 0; box-sizing: border-box; font-family: 'Quicksand', sans-serif;; }
 
 ul { list-style: none; }
 a { text-decoration: none; color: inherit; }
+
+.active { box-shadow: inset -5px 0px 0 0 #2C3357; background: #d0d0d0; }
 
 .app {
   &.layout { 
@@ -14,7 +16,7 @@ a { text-decoration: none; color: inherit; }
         ul li {
           transition: all .3s ease;
           a { padding: 10px 15px; display: block; }
-          &:hover { box-shadow: inset -5px 0px 0 0 #2C3357; background: #d0d0d0; }
+          &:hover { @extend .active; }
         }
       }
     }

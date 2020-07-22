@@ -1,7 +1,9 @@
 import React from 'react';
 import './styles.scss';
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, NavLink } from "react-router-dom";
 import ProductForm from './components/ProductForm';
+
+import {ReactComponent as TnLogo} from './img/tn.svg';
 
 const A = () => <div>Componente 1</div>;
 
@@ -9,14 +11,14 @@ function App() {
   return (
     <div className="app layout">
       <aside>
-        <header>Tiendanube</header>
+        <header> <TnLogo className="svg"/> </header>
         <nav>
           <ul>
             <li>
-              <Link to="/">Product List</Link>
+              <NavLink to="/" activeClassName="active" exact>Product List</NavLink>
             </li>
             <li>
-              <Link to="/products">Products</Link>
+              <NavLink to="/products" activeClassName="active">Products</NavLink>
             </li>
           </ul>
         </nav>
@@ -27,7 +29,7 @@ function App() {
         </header>
         <Switch>
           <Route exact path="/" component={A} />
-          <Route path="/products" component={ProductForm} />
+          <Route exact path="/products" component={ProductForm} />
         </Switch>
       </main>
     </div>
