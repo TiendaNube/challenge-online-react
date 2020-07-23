@@ -1,11 +1,13 @@
 import React from 'react';
-import './styles.scss';
+
 import { Switch, Route, NavLink } from "react-router-dom";
+
 import ProductForm from './components/ProductForm';
+import ProductList from './components/ProductList/ProductList';
+
+import './styles.scss';
 
 import {ReactComponent as TnLogo} from './img/tn.svg';
-
-const A = () => <div>Componente 1</div>;
 
 function App() {
   return (
@@ -28,7 +30,7 @@ function App() {
           <h1>Products</h1>
         </header>
         <Switch>
-          <Route exact path="/" component={A} />
+          <Route exact path="/" component={ProductList}/>
           <Route exact path="/products" component={ProductForm} />
         </Switch>
       </main>
