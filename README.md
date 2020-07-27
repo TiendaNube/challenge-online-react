@@ -7,7 +7,7 @@ The project is set up with a basic architecture so you can focus into the most i
 ## What we expect on this challenge:
 - Features:
   - [X] Transcribe all components, than you find, from classes to functional in the Components folder.
-  - [X] Implement an CR to handle **C**reate and **R**ead of the products persisting them into **Local Storage**.
+  - [X] Implement a CR to handle **C**reate and **R**ead of the products persisting them into **Local Storage**.
   - [X] We wish you to identify component issues that are not well designed, and improve their reusability
 
 The CRUD have to follow these requirements:
