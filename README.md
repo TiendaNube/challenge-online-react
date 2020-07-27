@@ -20,7 +20,7 @@ You can add any library into the project, but we wish to evaluate how you create
 Not required but desireable:
 - Jest knoledge, fix component errors.
 - Any performance improvement, avoid multiple renders.
-- Implement an DU to handle **D**elete and **U**pdate of the products persisting them into **Local Storage**.
+- Implement a DU to handle **D**elete and **U**pdate of the products persisting them into **Local Storage**.
 - Design System improvements
 
 ---
