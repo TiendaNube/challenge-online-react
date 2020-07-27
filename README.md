@@ -18,7 +18,7 @@ The CRUD have to follow these requirements:
 You can add any library into the project, but we wish to evaluate how you create your own components
 
 Not required but desireable:
-- Jest knoledge, fix component errors.
+- Jest knowledge, fix component errors.
 - Any performance improvement, avoid multiple renders.
 - Implement a DU to handle **D**elete and **U**pdate of the products persisting them into **Local Storage**.
 - Design System improvements
@@ -32,9 +32,7 @@ In the project directory, you can run:
 ### `yarn start`
 
 Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `yarn test`
 
 Test the app in the development mode.<br>
-View it in console.
