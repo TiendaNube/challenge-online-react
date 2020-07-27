@@ -12,7 +12,7 @@ The project is set up with a basic architecture so you can focus into the most i
 
 The CRUD have to follow these requirements:
 - Must persist data with refresh (Local storage as mentioned above).
-- Apply an State manager to handle the basic features (Mobx, Redux, Reflux, ContextAPI - Wherether you feel confortable, we wish to understand how do you structure your logic)
+- Apply a State manager to handle the basic features (Mobx, Redux, Reflux, ContextAPI - Where you feel confortable, we wish to understand how you structure your logic)
 - Validate and show input errors preventing submit
 
 You can add any library into the project, but we wish to evaluate how you create your own components
