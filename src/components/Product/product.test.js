@@ -14,7 +14,6 @@ describe("Render Product", () => {
         count={data.count}
         price={data.price}
         promotionalPrice={data.promotionalPrice}
-        callback={callback}
       />
     );
   }
